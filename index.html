@@ -5,9 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16">
-    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM8.5 7v1.5H10a.5.5 0 0 1 0 1H8.5V11a.5.5 0 0 1-1 0V9.5H6a.5.5 0 0 1 0-1h1.5V7a.5.5 0 0 1 1 0z"/>
-  </svg>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+    class="bi bi-file-earmark-plus-fill" viewBox="0 0 16 16"></svg>
   <script src="https://kit.fontawesome.com/7daeab2ad9.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
@@ -16,56 +15,67 @@
 </head>
 
 <body>
+  <!-- header displaying day month year -->
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
+  <!-- container holding the 9-5 boxes -->
   <div class="container ">
+    <!-- 9am box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="900">
-      <span class="hour" id="hour">  9AM</span>
-      <textarea class=" col" id="9"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <span class="hour" id="hour"> 9AM</span>
+      <textarea class="task col" id="9"></textarea>
+      <button class="saveBtn" id="9-btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
+    <!-- 10am box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="1000">
       <span class="hour" id="hour">10AM</span>
-      <textarea class=" col" id="10"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <textarea class="task col" id="10"></textarea>
+      <button class="saveBtn" id="10btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
+    <!-- 11am box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="1100">
       <span class="hour" id="hour">11AM</span>
-      <textarea class=" col" id="11"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <textarea class="task col" id="11"></textarea>
+      <button class="saveBtn" id="11btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
+    <!-- 12pm box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="1200">
       <span class="hour" id="hour">12PM</span>
-      <textarea class=" col" id="12"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <textarea class="task col" id="12"></textarea>
+      <button class="saveBtn" id="12btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
+    <!-- 1pm box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="1300">
-      <span class="hour" id="hour">  1PM</span>
-      <textarea class=" col" id="13"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <span class="hour" id="hour"> 1PM</span>
+      <textarea class="task col" id="13"></textarea>
+      <button class="saveBtn" id="13btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
+    <!-- 2pm box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="1400">
-      <span class="hour" id="hour">  2PM</span>
-      <textarea class=" col" id="14"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <span class="hour" id="hour"> 2PM</span>
+      <textarea class="task col" id="14"></textarea>
+      <button class="saveBtn" id="14btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
+    <!-- 3pm box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="1500">
-      <span class="hour" id="hour">  3PM</span>
-      <textarea class=" col" id="15"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <span class="hour" id="hour"> 3PM</span>
+      <textarea class="task col" id="15"></textarea>
+      <button class="saveBtn" id="15btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
+    <!-- 4pm box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="1600">
-      <span class="hour" id="hour">  4PM</span>
-      <textarea class=" col" id="16"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <span class="hour" id="hour"> 4PM</span>
+      <textarea class="task col" id="16"></textarea>
+      <button class="saveBtn" id="16btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
+    <!-- 5pm box -->
     <div class="row justify-content-center pr-1 pl-1 timeBlock" id="1700">
-      <span class="hour" id="hour">  5PM</span>
-      <textarea class=" col" id="17"></textarea>
-      <button class="saveBtn "><i class="fa-solid fa-circle-plus"></i></button>
+      <span class="hour" id="hour"> 5PM</span>
+      <textarea class="task col" id="17"></textarea>
+      <button class="saveBtn" id="17btn"><i class="fa-solid fa-circle-plus"></i></button>
     </div>
   </div>
 
